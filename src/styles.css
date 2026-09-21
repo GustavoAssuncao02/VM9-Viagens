@@ -1499,17 +1499,61 @@ p {
     top: 0;
   }
   .flight-cloud {
-    width: 85px !important;
-    top: 35% !important;
+    animation-name: mobile-cloud-pass;
+  }
+  .cloud-0 {
+    width: 76px !important;
+    top: 18% !important;
+    animation-duration: 19s !important;
+    animation-delay: -13s !important;
+  }
+  .cloud-1 {
+    width: 104px !important;
+    top: 48% !important;
+    animation-duration: 24s !important;
+    animation-delay: -4s !important;
+  }
+  .cloud-2 {
+    width: 68px !important;
+    top: 72% !important;
+    animation-duration: 17s !important;
+    animation-delay: -9s !important;
+  }
+  .cloud-3 {
+    width: 92px !important;
+    top: 28% !important;
+    animation-duration: 22s !important;
+    animation-delay: -18s !important;
+  }
+  .cloud-4 {
+    width: 82px !important;
+    top: 61% !important;
+    animation-duration: 20s !important;
+    animation-delay: -1s !important;
+  }
+  .cloud-5 {
+    width: 112px !important;
+    top: 8% !important;
+    animation-duration: 26s !important;
+    animation-delay: -21s !important;
   }
   .wind {
     width: 145px;
+    animation-name: mobile-wind-pass;
+    animation-duration: 8.5s;
+    animation-delay: -5.8s;
   }
   .wind-two {
     width: 170px;
+    top: 57%;
+    animation-duration: 10.5s;
+    animation-delay: -2.2s;
   }
   .wind-three {
     width: 125px;
+    top: 25%;
+    animation-duration: 7.2s;
+    animation-delay: -0.8s;
   }
   .airplane-float {
     animation-name: mobile-float;
@@ -1810,6 +1854,22 @@ p {
   }
   50% {
     transform: translate3d(0, -5px, 0) rotate(-14deg);
+  }
+}
+@keyframes mobile-cloud-pass {
+  from {
+    transform: translate3d(calc(100vw + 72px), 0, 0);
+  }
+  to {
+    transform: translate3d(-145px, 0, 0);
+  }
+}
+@keyframes mobile-wind-pass {
+  from {
+    transform: translate3d(calc(100vw + 58px), 0, 0);
+  }
+  to {
+    transform: translate3d(-190px, 0, 0);
   }
 }
 @media (prefers-reduced-motion: reduce) {
