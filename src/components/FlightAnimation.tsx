@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react';
+import { assetPath } from '../utils/assets';
 
 // Tempos em segundos; amplitudes em pixels. Movimento coordenado pelo mesmo ciclo.
 export const FLIGHT_CONFIG = {
@@ -21,7 +22,7 @@ export function Airplane({ className = '' }: { className?: string }) {
   return (
     <img
       className={className}
-      src="/images/airplane-reference.png"
+      src={assetPath('/images/airplane-reference.png')}
       alt=""
       width="185"
       height="169"

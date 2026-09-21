@@ -11,6 +11,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { benefits, services, testimonials } from '../data/site';
+import { assetPath } from '../utils/assets';
 import { ContactButton, Eyebrow } from './Shared';
 import { Airplane } from './FlightAnimation';
 
@@ -52,7 +53,7 @@ export function Benefits() {
         <div className="benefits-visual">
           <div className="benefits-photo">
             <img
-              src="/images/bora-bora.webp"
+              src={assetPath('/images/bora-bora.webp')}
               alt="Ilhas verdes e mar turquesa em Bora Bora"
               width="1000"
               height="700"

@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react';
 import { whatsappUrl } from '../data/site';
+import { assetPath } from '../utils/assets';
 import type { ReactNode } from 'react';
 
 export function WhatsAppIcon({ size = 22 }: { size?: number }) {
@@ -55,7 +56,7 @@ export function Logo({ footer = false }: { footer?: boolean }) {
       className={`brand ${footer ? 'brand-footer' : ''}`}
       aria-label="VM9 Viagens — início"
     >
-      <img src="/images/vm9-logo.png" alt="VM9 Viagens" width="150" height="150" />
+      <img src={assetPath('/images/vm9-logo.png')} alt="VM9 Viagens" width="150" height="150" />
     </a>
   );
 }
